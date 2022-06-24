@@ -1,0 +1,217 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+	
+/*新訊列表*/
+ul.newsList{}
+
+ul.newsList li{
+	position: relative;
+	padding:100px 0 50px;
+}
+ul.newsList li:nth-child(even) .Img{
+	right:0;
+	left: auto;
+}
+ul.newsList li:nth-child(even) .Txt{
+	float: left;
+}
+
+
+
+ul.newsList li .Img{
+	width:calc(40% + 40px);
+	position:absolute;
+	z-index: 10;
+	top: 40px;
+	left: 0;
+}
+ul.newsList li .Img img{
+	width: 100%;
+	display:block;
+}
+
+ul.newsList li .Area {
+    float: left;
+    width: 40%;
+}
+ul.newsList li .Txt{
+	min-height: 250px;
+	z-index: 5;
+	background:#fff;
+	float: right;
+	width:60%;
+	padding:80px;
+	box-shadow: -4px -1px 20px 5px rgba(0, 0, 0, 0.05);
+}
+ul.newsList li .Txt .date{
+	margin:0 40px 0 0;
+	float: left;
+	font-family: 'Jaldi', sans-serif;
+	font-size: 25px;
+	color:#777777;
+	letter-spacing: 2.5px;
+	line-height: 1;
+}
+ul.newsList li .Txt .date strong{
+	letter-spacing: 2px;
+	font-weight: normal;
+	font-size: 45px;
+	display: block;
+}
+ul.newsList li .Txt .Area{
+	float: left;
+	width:calc(100% - 220px);
+}
+ul.newsList li .Txt h3,
+ul.newsList li .Txt h3 a{
+	font-family: 'cwTeXFangSong';
+	font-size:25px;
+	color:#202020;
+	font-weight: normal;
+	display: block;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow : ellipsis;
+}
+ul.newsList li .Txt p{
+	display: block;
+	color:#a1a1a1;
+	font-size: 15px;
+	line-height: 25px;
+	height: 50px;
+	overflow:hidden;
+	margin:30px 0;
+}
+.newsDate{
+	display: block;
+	margin:20px 0;
+		font-family: 'Jaldi', sans-serif;
+		
+	font-size: 12px;
+	line-height: 1;
+	color:#777777;
+	letter-spacing: 2.5px;
+}
+.newsDate strong{
+	font-size: 18px;
+}
+.newsDate b{
+	font-weight: normal;
+	font-family: Helvetica, Arial, "微軟正黑體", Heiti TC, "メイリオ" , sans-serif ;
+
+}
+	
+/*內頁*/
+/****分享*****/
+.shareBox{
+	float:right;}
+
+.shareBox .btn-fb{
+	margin-right:5px;
+	display:inline-block;
+	vertical-align:middle;}
+
+.shareBox a.back{
+	cursor:pointer;
+	display:inline-block;
+	vertical-align:middle;
+	padding:3px 5px;
+	font-size:12px;
+	color:#FFF;
+	border-radius:3px;
+	
+	background: rgb(174,66,51); /* Old browsers */
+	background: -moz-linear-gradient(top,  rgba(174,66,51,1) 0%, rgba(196,76,76,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(174,66,51,1)), color-stop(100%,rgba(196,76,76,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(174,66,51,1) 0%,rgba(196,76,76,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(174,66,51,1) 0%,rgba(196,76,76,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(174,66,51,1) 0%,rgba(196,76,76,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(174,66,51,1) 0%,rgba(196,76,76,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ae4233', endColorstr='#c44c4c',GradientType=0 ); /* IE6-9 */
+	
+	-webkit-transition:none;
+	-moz-transition:none;
+	-o-transition:none;
+	transition:none;}
+	
+.shareBox a.back:hover{
+	background:#398cb1;}
+
+/********標題區*******/
+.titleArea{
+	clear:both;
+	margin-bottom:30px;
+	border-bottom:1px solid #ededed;/*下邊線*/
+	padding:15px 10px;/*下邊線與標題距離*/}	
+
+.titleArea .Titleright{
+	float: left;
+	width:calc(100% - 90px);
+}
+
+
+.titleArea h1{/*標題區左-訊息日期*/
+clear: both;
+    margin-bottom: 25px;
+    font-size: 25px;
+    font-weight: normal;
+    color: #000;
+}
+
+.titleArea .btn-fb{/*fb*/
+	float:left;}
+
+
+
+
+@media (max-width:1023px){
+ul.newsList li .Txt .Area {
+    float: none;
+    width: 100%;
+	clear: both;
+	padding-top:30px;
+}
+}
+
+
+@media(max-width:767px){
+	
+	.titleArea .Titleright{
+	float: left;
+	width:calc(100% - 70px);
+}
+	
+.titleArea .newIcon {
+    font-size: 12px;
+    padding: 15px 12px 15px;
+    margin: 0 20px 0 0;
+
+}	
+.titleArea .newsDate {
+    margin: 0 0 20px 0;
+}
+	
+	
+ul.newsList li {
+    position: relative;
+    padding: 50px 0 0 0;
+}
+ul.newsList li .Img{
+	top:auto;
+		position:relative;
+	display:block;
+width:100%;
+}
+ul.newsList li .Txt{
+	width:100%;
+	    padding: 40px;
+}
+.newIcon {
+    font-size: 12px;
+    padding: 15px 12px 15px;
+    margin: 0;
+    letter-spacing: 2px;
+}
+}

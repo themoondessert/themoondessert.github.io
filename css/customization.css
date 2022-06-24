@@ -1,0 +1,176 @@
+@charset "utf-8";
+/* CSS Document */
+.contentBox .leftBox{
+	float: left;
+	padding:0;}
+
+.contentBox .rightBox{
+	float: left;
+	padding:0 50px 0 0;}
+#gmap{
+	height:60vh;}
+#gmap .storeTitle{
+	font-size:15px;
+	color:#ce011a;}
+
+#gmap .storeAddr{
+	margin-top:10px;
+	font-size:13px;
+	line-height:1.6;
+	color:#444;}
+
+#gmap .btn{
+	margin-top:10px;}
+
+
+
+/*列表頁*/
+
+.mainArea .contentBox ul.storeList li .Img{/*訊息圖片*/
+	border:none;
+	float:left;}
+
+ul.storeList li .Img img{
+	display:block;
+	width:60%;}
+
+ul.storeList li .Txt{/*文字區*/
+	padding:35px 35px 0 35px;
+	overflow:hidden;
+	}
+
+ul.storeList li .Txt h3{/*訊息標題*/
+	color: #777;
+    font-size: 13px;
+    line-height: 20px;
+	width:100%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	position:relative;
+	margin-bottom:25px;
+    font-family: 'cwTeXFangSong';}
+
+ul.storeList li .Txt h3 a{/*訊息標題*/
+	    font-weight: normal;
+    line-height: 1.5;
+    color: #a06b45;
+    font-size: 25px;
+    font-family: '標楷體';}
+ul.storeList li .Txt h4{
+	padding-bottom:20px;
+	position:relative;
+	font-size:15px;
+	color:#888;
+	font-weight:normal;}
+ul.storeList li .Txt span.timetitle{
+	width:23%;
+	float:left;}
+ul.storeList li .Txt span.time{
+	width:77%;
+	float:left;}
+ul.storeList li .Txt p{/*列表說明*/
+    margin: 25px 0;
+
+    color: #777;
+    font-size: 13px;
+    line-height: 20px;
+	height: 60px;
+	overflow: hidden;
+
+}
+ul.storeList li .Txt .btn{
+	display:block;
+	margin-top:30px;
+text-align: center;
+
+
+
+}
+
+ul.storeList li .Txt .btn a span.close{
+	display:none;}	
+ul.storeList li .detail{
+	display:none;
+	padding:20px;
+}
+
+/****分享*****/
+/********標題區*******/
+.titleArea{
+	clear:both;
+	padding:15px 0;/*下邊線與標題距離*/
+	display:inline-block;}	
+
+.titleArea h3{/*標題區左-訊息標題*/
+	font-size:26px;
+	font-weight:normal;
+	color:#222;
+	overflow:hidden;}
+
+.titleArea h3 strong{
+	display:block;
+	font-weight:normal;}
+
+.titleArea h3 b{/*標題區左-訊息日期*/
+	font-size:12px;
+	color:#A3A3A3;
+	font-weight:normal;
+	margin-left:5px;}
+
+.titleArea .btn-fb{/*fb*/
+	float:left;}
+
+.titleArea a.back{/*回上頁*/
+	cursor:pointer;
+	display:block;
+	float:right;
+	margin-left:5px;
+	color:#06F;
+	font-size:10pt;}
+
+
+
+
+@media (max-width: 1180px){
+
+	#storeMap {
+		height: 400px;}
+}
+@media (max-width: 1160px){
+	ul.storeList li .Txt {
+    padding: 45px 20px 0 20px;}
+	.newsDate .date{
+		width:70%;}
+	ul.storeList li .Txt p{
+		padding:0;}
+	#gmap{
+		height:250px;}
+}
+
+@media (max-width:1023px){
+	
+	.contentBox .rightBox{
+	padding:0;}
+}
+
+@media (max-width: 930px){
+	.mainArea .contentBox ul.storeList li .Img{
+		float:none;}
+	ul.storeList li{
+		box-sizing:border-box;
+		padding:10px;
+		width:50%;
+		float:left;}
+	ul.storeList li .Txt {
+		padding: 45px 20px 30px 20px;}
+}
+@media (max-width: 725px){
+	ul.storeList li{
+		padding:10px 0;
+		width:100%;}	
+}
+@media (max-width: 320px){
+	ul.storeList li .Txt span{
+		display:block;}	
+}
