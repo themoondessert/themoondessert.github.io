@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>The moon dessert 點餐系統</title>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <span>電話</span><input type="text" id="myLine">
+    <br>
+    <br>
+    <button onclick="mySubmit()">傳送 Send</button>
+</body>
+<script>
+    function mySubmit(){
+        var myMessage = document.getElementById('myLine').value;
+        console.log(myMessage);
+        let url = 'https://script.google.com/macros/s/AKfycbwiURY1kXohmYHQT84nKxTpbAulgZUmA8KZnsOHcojkbDMLi6ATIg8GZoYMYU94iho/exec'  
+        $.post(url,
+            {msg:myMessage}
+        )
+    }
+</script>
+</html>

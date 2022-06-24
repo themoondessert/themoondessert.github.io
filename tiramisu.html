@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <!--手機解析度-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>The moon dessert | 失眠甜點所</title>
+    <meta name="description" content="失眠甜點所 The Moon Dessert">
+    <!--open graph protocol-->
+    <meta property="og:title" content="酒仙提拉米蘇 失眠甜點所">
+    <meta property="og:image"
+        content="https://www.bamboola.com.tw/upload/product_list_pic_s/84e0f5a0873ad867a4ddf37fb6579240.jpg">
+    <meta property="og:description" content="失眠甜點所 The Moon Dessert">
+    <meta property="og:site_name" content="失眠甜點所">
+    <meta property="og:url" content="https://www.bamboola.com.tw/product/ins.php?index_id=124">
+    <meta property="og:type" content="website">
+
+
+    <!--bread script-->
+    <script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+	  {
+		"@type": "ListItem",
+		"position": 1,
+		"item": {
+		  "@id": "https://www.bamboola.com.tw/",
+		  "name": "首頁"
+			}
+	  },
+	  {
+		"@type": "ListItem",
+		"position": 2,
+		"item": {
+		  "@id": "https://www.bamboola.com.tw/product/",
+		  "name": "產品介紹"
+			}
+	  },
+	  {
+		"@type": "ListItem",
+		"position": 3,
+		"item": {
+		  "@id": "https://www.bamboola.com.tw/product/ins.php?index_id=124",
+		  "name": "碟型竹盛"
+			}
+	  }
+  ]
+}
+</script>
+
+    <!--css-->
+    <link rel="stylesheet" type="text/css" href="css/master.css">
+    <link rel="stylesheet" type="text/css" href="css/product.css">
+    <link href="https://formden.com/static/assets/demos/bootstrap-iso/bootstrap-iso/bootstrap-iso.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!--ga-->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-111539364-13"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-111539364-13');
+    </script>
+
+    <meta name="google-site-verification" content="HxruTagt3UFVWCHbtTSHYTWdefexQHkerQ9PPzKs9Do" />
+    <!--favor icon-->
+    <link rel="shortcut icon" href="images/Circle title.png" />
+
+    <!--touch_icon-->
+    <link rel="apple-touch-icon" href="images/Circle title.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="images/Circle title.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="images/Circle title.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="images/Circle title.png" />
+
+    <script src="../the_moon/database/function/jquery-1.8.3.min.js"></script>
+    <script src="../the_moon/database/function/ui/jquery.blockUI.js"></script>
+    <script src="../the_moon/database/function/ui/jquery.form.js"></script>
+    <script src="../the_moon/database/function/ajax_function.js"></script>
+    <script src="../the_moon/database/function/script.js"></script>
+    <script>
+        function open_layer_detail(div_name, width, height) {
+            if (width == '') {
+                width = 0;
+            }
+            if (height == '') {
+                height = 0;
+            }
+            $.blockUI({
+                message: $('#' + div_name),
+                css: {
+                    cursor: 'default',
+                    width: width + 'px',
+                    height: height + 'px',
+                    padding: '0px',
+                    top: ($(window).height() - height) / 2 + 'px',
+                    left: ($(window).width() - width) / 2 + 'px'
+                }
+            });
+        }
+        function open_loading_status(loading_name) {
+            width = $('#' + loading_name).css('width').replace("px", "");
+            height = $('#' + loading_name).css('height').replace("px", "");
+            $.blockUI({
+                message: $('#' + loading_name),
+                css: {
+                    cursor: 'default',
+                    border: '',
+                    backgroundColor: '',
+                    width: width + 'px',
+                    height: height + 'px',
+                    padding: '0px',
+                    top: ($(window).height() - height) / 2 + 'px',
+                    left: ($(window).width() - width) / 2 + 'px'
+                }
+            });
+        }
+        function close_layer_detail() {
+            $.unblockUI();
+        }
+        function close_top_layer_detail() {
+            top.$.unblockUI();
+        }
+        //建立執行的div
+        $(function () {
+            $('body').prepend("<span id='iframe_string'></span>");
+            $('body').prepend('<div id="waiting_action" style="display:none;text-align:center;position: absolute;z-index: 99998;color:#FFF;font-size:12px;border:0px;"><img src="../database/function/loading_type/loading_big.gif" hspace="2" align="absmiddle"/><br><img src="../database/function/loading_type/loading_text.png" hspace="2" align="absmiddle"/></div>');
+        });
+//end
+    </script>
+    <script type="text/javascript" src="../the_moon/Scripts/jqueryui/jquery.ui.core.min.js"></script>
+
+    <script>
+        var isMobile = false;
+        var isTablet = false;
+        var isAndroidOS = false;
+        var isiOS = false;
+        var isSafari = false;
+    </script>
+
+    <!-- IE Fix for HTML5 Tags -->
+    <!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Jaldi" rel="stylesheet">
+    <style>
+        @font-face {
+
+            /*仿宋*/
+
+            font-family: 'cwTeXFangSong';
+            font-style: normal;
+            font-weight: 500;
+            src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot);
+            src: url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.eot?#iefix) format('embedded-opentype'),
+                url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff2) format('woff2'),
+                url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.woff) format('woff'),
+                url(//fonts.gstatic.com/ea/cwtexfangsong/v3/cwTeXFangSong-zhonly.ttf) format('truetype');
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!--購物浮動視窗-->
+    <!--訂購-->
+    <div class="cartArea" id="cartArea">
+        <!--cartArea-->
+        <div class="wrap b-box">
+            <!--wrap-->
+            <a id="closeCart" onClick="Custombox.close()"><i class="fa fa-remove"></i></a>
+            <ul class="cart clearfix">
+                <span id="buylist_html"></span>
+            </ul>
+            <div class="countBox clearfix">
+                <!--countBox-->
+                總數<b class="buycar_count">0</b>　總計<b><em>$</em><span class="buycar_totalprice">0</span></b>
+                <a href="../pay/" class="btn_pay btn_color1 goto_pay_btn">前往結帳</a>
+            </div>
+            <!--countBox end-->
+        </div>
+        <!--wrap end-->
+    </div>
+    <!--cartArea end-->
+    <!--訂購單查詢-->
+    <div class="orderCheckArea" id="orderCheckArea">
+        <!--orderCheckArea-->
+        <div class="wrap b-box">
+            <a id="closeOrder" onClick="Custombox.close()"><i class="fa fa-remove"></i></a>
+            <h4>訂購單查詢</h4>
+            <input name="order_no" type="text" class="b-box" id="order_no" placeholder="訂購單編號">
+            <input name="order_mtel" type="text" class="b-box" id="order_mtel" placeholder="手機號碼">
+            <a class="btn btn_color1" style="cursor:pointer"
+                onClick="if($('#order_no').val()=='' || $('#order_mtel').val()==''){alert('請填寫訂購單編號、行動電話');}else{ jq_post_noloading('../pay/act.php','act=7&order_no=' + $('#order_no').val() + '&order_mtel=' + $('#order_mtel').val(),'iframe_string');}">送出查詢</a>
+        </div>
+    </div>
+    <!--orderCheckArea end-->
+    
+
+
+    <div class="outerWrap b-box">
+        <!--outerWrap-->
+
+        <header>
+            <!--header-->
+            <div class="wrap b-box clearfix">
+                <!--wrap-->
+
+                <div class="logo"><a href="index.html" title="The moon dessert | 失眠甜點所">The moon dessert | 失眠甜點所</a>
+                </div>
+
+
+                <div class="cartBox">
+                    <!-- cartBox -->
+
+                    <!--產品搜尋-->
+                    <a class="cartToggle exclude link" title="您的購物車" href="card.html"><img src="images/cart-icon.png" alt="" /><b
+                            class="num buycar_count">0</b></a>
+
+
+
+                    <a class="orderToggle" title="訂單查詢"><img src="images/order-icon.png" alt="" /></a>
+
+
+                    <div class="searchBox">
+                        <!-- searchBox -->
+                        <h6>產品搜尋</h6>
+                        <input name="keyword_pc" type="text" class="b-box" id="keyword_pc" placeholder="Search..."
+                            value="">
+                        <a class="fa fa-search"
+                            onclick="if($('#keyword_pc').val()==''){ alert('請輸入關鍵字');}else{location.href=encodeURI('../catalog/index.php?keyword=' + $('#keyword_pc').val());}"></a>
+                    </div><!-- searchBox end -->
+                    <script>
+                        $(function () {
+                            //電腦板搜尋產品 enter
+                            $('#keyword_pc').keydown(function (event) {
+                                if (event.which == 13) {
+                                    if ($('#keyword_pc').val() == '') { alert('請輸入關鍵字...'); }
+                                    else { location.href = encodeURI('../product/index.php?keyword=' + $('#keyword_pc').val()); }
+                                }
+                            });
+                        });
+                    </script>
+
+                </div><!-- cartBox end -->
+
+
+
+
+
+                <nav class="menuBox">
+                    <!--menuBox-->
+                    <ul class="menu cleafix" itemscope itemtype="http://www.schema.org/SiteNavigationElement">
+                        <!--menu-->
+
+
+                        <li itemprop="name" class="dropDown"><a itemprop="url" href="product.html">產品介紹</a>
+
+                            <ul class="submenu">
+                                <li>
+                                    <a href="cheesecake.html">巴斯伯爵</a>
+                                </li>
+                                <li>
+                                    <a href="mcheesecake.html">巴斯抹茶</a>
+                                </li>
+                                <li>
+                                    <a href="sberrycake.html">草莓重乳酪</a>
+                                </li>
+                                <li>
+                                    <a href="bberrycake.html">藍莓重乳酪</a>
+                                </li>
+                                <li>
+                                    <a href="sct.html">失眠巧克力塔</a>
+                                </li>
+                                <li>
+                                    <a href="tiramisu.html">酒仙提拉米蘇</a>
+                                </li>
+                                <li>
+                                    <a href="blackflower.html">黑花</a>
+                                </li>
+                                <li><a href="product.html" class="current">所有產品</a></li>
+                            </ul>
+
+                        </li>
+
+                        <li itemprop="name"><a itemprop="url" href="social.html">期間限定</a></li>
+                        <li itemprop="name"><a itemprop="url" href="customization.html">客製化服務</a></li>
+                        <li itemprop="name"><a itemprop="url" href="faq.html">購物須知</a></li>
+                    </ul>
+                    <!--menu end-->
+                </nav>
+                <!--menuBox end-->
+
+
+
+
+
+
+            </div>
+            <!--wrap end-->
+        </header>
+        <!--header end-->
+
+        <!--banner-->
+        <div class="bannerArea b-box">
+            <!--bannnerArea-->
+
+            <div class="bannerBox">
+                <!--bannerBox-->
+                <ul id="banner">
+                    <li><a href="#" title="banner"><img src="images/family.jpg" alt="banner"></a>
+                    </li>
+                </ul>
+            </div>
+            <!--bannerBox end-->
+
+        </div>
+        <!--bannerArea end-->
+
+        <script>
+            $(function () {
+                $('ul.menu').find('a[href="../product/"]').addClass('current');
+            });
+        </script>
+
+        <!--main-->
+        <div class="mainArea">
+            <!--mainArea-->
+            <div class="wrap b-box">
+                <!--wrap-->
+
+                <div class="titleBox clearfix">
+                    <!--titleBox-->
+                    <h2>產品介紹<strong>Our Products</strong></h2>
+                    <div class="bread">
+                        <!--bread-->
+                        <a href="index.html" title="The moon dessert | 失眠甜點所">﹤Home﹥</a>
+                        <a href="product.html">﹤Our Product﹥</a>
+                    </div>
+                    <!--bread end-->
+
+                </div>
+                <!--titleBox end-->
+
+                <div class="contentBox clearfix">
+                    <!--contentBox-->
+
+                    <div class="productIntro clearfix">
+                        <!--productIntro-->
+                        <div class="g-tv-6 albumBox">
+                            <!--albumBox-->
+                            <div class="Img"><img src="images/T3.jpg"></div>
+                            <ul class="side_album clearfix" id="product_slide">
+                                <!--album-->
+                                <li class="b-box"><a class="titan-lb" data-titan-group="gallery" data-fancybox="group"
+                                        rel="fancybox-thumb" href="images/T1.jpg" title=""><img
+                                            src="images/T1.jpg"></a></li>
+                                <li class="b-box"><a class="titan-lb" data-titan-group="gallery" data-fancybox="group"
+                                        rel="fancybox-thumb" href="images/T2.jpg" title=""><img
+                                            src="images/T2.jpg"></a></li>
+                                <li class="b-box"><a class="titan-lb" data-titan-group="gallery" data-fancybox="group"
+                                        rel="fancybox-thumb" href="images/T3.jpg" title=""><img
+                                            src="images/T3.jpg"></a></li>
+                                <li class="b-box"><a class="titan-lb" data-titan-group="gallery" data-fancybox="group"
+                                        rel="fancybox-thumb" href="images/T4.jpg" title=""><img
+                                            src="images/T4.jpg"></a></li>
+                            </ul>
+
+                        </div>
+                        <!--albumBox end-->
+                        <div class="introBox clearfix">
+                            <!--introBox-->
+                            <h1 class="articleTitle">酒仙提拉米蘇</h1>
+                            <b class="code">Tiramisu
+                            </b>
+                            <div class="Txt">
+                                <!--Txt-->
+                                $110
+                                <br />
+                                馬茲卡邦/自製手指餅乾
+                                <br />
+                                黑蘭姆酒/瑪莎拉酒/咖啡奶酒
+
+                            </div>
+                            <div class="Thinking">
+                                當你吃了這個Tiramisu就會被它那柔軟如棉花的內餡<br>
+                                口感所征服 ，而質地像蛋糕的手指餅乾浸潤在咖啡奶<br>
+                                酒裡，經過半天到一天的冷藏，吸收了咖啡液與馬斯<br>
+                                卡邦的滋味，外層在撒上一層可可粉，吃起來更是一<br>
+                                個奇妙的銷魂感<br>
+
+                            </div>
+                            <!--Txt end-->
+
+
+                            <!--share end-->
+                        </div>
+                        <!--introBox end-->
+                    </div>
+                    <!--productIntro end-->
+                    <div class="tab clearfix">
+                        <!--tab-->
+                        <a href="#intro" class="current">產品介紹</a>
+
+
+                    </div>
+                    <!--tab end-->
+                    <ul class="tabContent">
+                        <!--tabContent-->
+                        <li id="intro">
+                            <!--intro-->
+                            <div class="textEditor">
+                                <!--文字編輯器-->
+                                <img alt="網頁內面-01" border="0" src="images/T1.jpg" title="網頁內面-01" /><br />
+                                <br />
+                                <img alt="網頁內面-02" border="0" src="images/T2.jpg" title="網頁內面-02" /><br />
+                                <br />
+                                <img alt="網頁內面-04" border="0" src="images/T3.jpg" title="網頁內面-04" /><br />
+                                <br />
+                                <img alt="網頁內面-03" border="0" src="images/T4.jpg" title="網頁內面-03" /><br />
+                                <br />
+                                
+                            </div>
+                            <!--文字編輯器-->
+                        </li>
+                        <!--intro end-->
+                        <li id="price">
+                            <!--price-->
+                            <div class="textEditor">
+                                <!--文字編輯器-->
+
+                            </div>
+                            <!--文字編輯器-->
+                        </li>
+                        <!--price end-->
+                    </ul>
+
+                </div>
+                <!--contentBox end-->
+
+            </div>
+            <!--wrap end-->
+        </div>
+        <!--mainArea end-->
+
+
+        <!--footer-->
+        <footer class="clearfix">
+            <!--footer-->
+            <img src="../images/footerdec.png" class="dec" alt="" />
+            <div class="wrap b-box clearfix">
+                <!--wrap-->
+                <div class="linkArea" data-sr="enter bottom over 2s and move 50px">
+                    <!--linkArea-->
+                    <ul class="clearfix" id="linkArea">
+
+
+                        
+                        <!--data-->
+                        <li>
+                            <!--data-->
+                            <div class="item clearfix">
+                                <!--item-->
+                                <div class="Img">
+                                    <a href="https://page.line.me/?accountId=867anwmz&fbclid=IwAR3KYuK7K1DEilTuu1BnNtOb2BytwdBiAK10zOdE4Sx_KwwgI1QCsYUtICE" target='_blank'
+                                        title="- Line -"><img src="images/line.png" alt="- Line -"></a>
+                                </div>
+    
+                                <div class="Txt">
+                                    <!--Txt-->
+                                    <h3><a href="https://page.line.me/?accountId=867anwmz&fbclid=IwAR3KYuK7K1DEilTuu1BnNtOb2BytwdBiAK10zOdE4Sx_KwwgI1QCsYUtICE" target='_blank'
+                                            title="- Line -">-
+                                            Line -</a></h3>
+                                    <p><a href="https://page.line.me/?accountId=867anwmz&fbclid=IwAR3KYuK7K1DEilTuu1BnNtOb2BytwdBiAK10zOdE4Sx_KwwgI1QCsYUtICE" target='_blank'
+                                            title="- Line -">the moon dessert</a></p>
+                                </div>
+                                <!--Txt end-->
+                            </div>
+                            <!--item end-->
+                        </li>
+
+                        <li>
+                            <!--data-->
+                            <div class="item clearfix">
+                                <!--item-->
+                                <div class="Img">
+                                    <a href="https://www.instagram.com/the_moon_dessert/" target='_blank'
+                                        title="- Instagram -"><img src="images/igig.png" alt="- Instagram -"></a>
+                                </div>
+
+                                <div class="Txt">
+                                    <!--Txt-->
+                                    <h3><a href="https://www.instagram.com/the_moon_dessert/" target='_blank'
+                                            title="- Instagram -">-
+                                            Instagram -</a></h3>
+                                    <p><a href="https://www.instagram.com/the_moon_dessert/" target='_blank'
+                                            title="- Line -">the moon dessert</a></p>
+                                </div>
+                                <!--Txt end-->
+                            </div>
+                            <!--item end-->
+                        </li>
+                        <!--data-->
+
+
+
+
+
+                        <li>
+                            <!--data-->
+                            <div class="item clearfix">
+                                <!--item-->
+                                <div class="Img">
+                                    <a href="#" title="- 實體店面 -"><img
+                                            src="images/home.png" alt="- 實體店面 -"></a>
+                                </div>
+
+                                <div class="Txt">
+                                    <!--Txt-->
+                                    <h3><a href="#" title="- 實體店面 -">- 實體店面 -</a></h3>
+                                    <p><a href="#" title="- 實體店面 -">嘉義市西區忠義街57號</a>
+                                    </p>
+                                </div>
+                                <!--Txt end-->
+                            </div>
+                            <!--item end-->
+                        </li>
+                        <!--data-->
+
+
+                    </ul>
+                </div>
+                <!--linkArea end-->
+                <div class="downLogo"><a href="index.html" title="失眠甜點所"><img src="images/Logo-remove.png" alt="失眠甜點所"
+                            data-sr="enter top over 2s and move 50px wait 0.6s"></a></div>
+                <h5 class="copyright">
+                    <b>IG:</b>the_moon_dessert
+                    <b>Address:</b>嘉義市西區忠義街57號
+                </h5>
+                <div class="endArea">
+                    <!--endArea-->
+                    Copy © The moon dessert 失眠甜點所　　
+                </div>
+                <!--endArea end-->
+                <!--social分享-->
+                <div class="social">
+                    <!--social-->
+                    <a class="fb"
+                        href="javascript: void(window.open('http://www.facebook.com/share.php?u='.concat(encodeURIComponent(location.href)) ));"><i
+                            class="fa fa-facebook"></i></a>
+                    <a class="gPlus"
+                        href="javascript: void(window.open('https://plus.google.com/share?url='.concat(encodeURIComponent(location.href))));"
+                        target="_blank"><i class="fa fa-google-plus"></i></a>
+                    <a class="twitter" href="https://twitter.com/share?url=URLENCODED_URL&text=失眠甜點所"
+                        onclick="javascript:window.open(this.href, '', '');return false;" target="_blank"
+                        title="失眠甜點所"><i class="fa fa-twitter"></i></a>
+                    <a
+                        href="javascript:(function(){window.open('http://v.t.sina.com.cn/share/share.php?title='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(location.href)+'&source=bookmark','_blank','');})()"><i
+                            class="fa fa-weibo"></i></a>
+                </div>
+                <!--social end-->
+            </div>
+            <!--wrap end-->
+        </footer>
+        <!--footer end-->
+    </div>
+    <!--outerWrap end-->
+    <!--mobile menu 手機板選單-->
+    <div class="m_menu b-box clearfix">
+        <!--m_menu-->
+        <div class="mask"></div>
+        <div class="controlBox clearfix">
+            <!--controlBox-->
+            <a class="main"><i class="fa fa-reorder"></i></a>
+            <div class="right">
+                <!--right-->
+                <div class="btn_cart"><a class="cartToggle" title="您的購物車"><img src="images/cart-icon.png" alt="" /><b
+                            class="m_cartCount">0</b></a></div>
+                <a class="orderToggle" title="訂單查詢"><img src="images/order-icon.png" alt="" /></a>
+            </div>
+            <!--rightBox end-->
+            <div class="m_logo"><a href="index.html"><img src="images/Logo title.jpg"></a></div>
+        </div>
+        <!--controlBox end-->
+        <div class="hideBox">
+            <!--hideBox-->
+            <!--手機板搜尋產品-->
+            <div class="searchBox_m">
+                <!--searchBox-->
+                <input name="keyword_mobile" type="text" class="b-box" id="keyword_mobile" placeholder="產品搜尋" value="">
+                <a class="fa fa-search"
+                    onclick="if($('#keyword_mobile').val()==''){ alert('請輸入關鍵字');}else{location.href=encodeURI('../product/index.php?keyword=' + $('#keyword_mobile').val());}"></a>
+            </div>
+            <!--searchBox end-->
+            <script>
+                $(function () {
+                    //手機板搜尋產品 enter
+                    $('#keyword_mobile').keydown(function (event) {
+                        if (event.which == 13) {
+                            if ($('#keyword_mobile').val() == '') { alert('請輸入關鍵字...'); }
+                            else { location.href = encodeURI('../product/index.php?keyword=' + $('#keyword_mobile').val()); }
+                        }
+                    });
+                });
+            </script>
+            <p class="sp">CONTACT</p>
+            <div class="mfun">
+                <!--mfun-->
+                <a href="index.html" class="marker" target="_blank"><i
+                        class="fa fa-map-marker"></i></a>
+
+                <a href="card.html"><i class="fa fa-phone"></i></a>
+            </div>
+            <!--mfun end-->
+            <p class="sp sp_menu">MENU</p>
+        </div>
+        <!--hideBox end-->
+    </div>
+    <!--m_menu end-->
+    <!--general Js-->
+    <script>
+        $(function () {
+            if (!isMobile) {
+                $(window).scroll(function () {
+                    var scrollTop = $(document).scrollTop();
+                    if (scrollTop > 100) {
+                        $('header').addClass('shrink');
+                    } else {
+                        $('header').removeClass('shrink');
+                    }
+                });
+            }
+        });
+    </script>
+    <!--tinymap-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuYDSZ0uFNeM-MtEKXU0J8t1vuopXQRaY"></script>
+    <script type="text/javascript" src="../the_moon/Scripts/jquery.tinyMap-3.4.9.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+
+
+            $('#gmap_s, #locationMap, #gmap_home, #gmapContact').tinyMap({
+                'center': { x: '23.759538', y: ' 120.704658' },
+                'zoom': 15,
+                'draggable': true,
+                'markerCluster': true,
+                'scrollwheel': false,
+                'draggable': isMobile ? false : true,
+                'marker': [
+                    {
+                        'addr': { x: '23.759538', y: ' 120.704658' },
+                        'text': '大禾竹藝<br>南投縣竹山鎮延祥里延祥路362巷7號',
+                        'newLabel': '大禾竹藝',
+                        'newLabelCSS': 'label',
+                        'animation': 'DROP'
+                    }
+                ]
+            });
+
+
+
+        });
+
+
+    </script>
+    <script type="text/javascript" src="../the_moon/Scripts/jsManage.js"></script>
+    <!--fancyBox-->
+    <link rel="stylesheet" href="../the_moon/Scripts/fancybox/jquery.fancybox.css">
+    <script src="../the_moon/Scripts/fancybox/jquery.fancybox.min.js"></script>
+    <script>
+        $(function () {
+            $('.titan-lb').fancybox({
+                thumbs: {
+                    showOnStart: true
+                },
+                hash: true
+            });
+        })
+    </script>
+    <!-- slick -->
+    <link rel="stylesheet" href="../the_moon/Scripts/slick-slider/slick-theme.css">
+    <link rel="stylesheet" href="../the_moon/Scripts/slick-slider/slick.css">
+    <script src="../the_moon/Scripts/slick-slider/slick.min.js"></script>
+    <script>
+        $(function () {
+            $('#banner').slick({
+                infinite: true,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                fade: true,
+                arrows: false,
+                autoplay: true,
+                autoplaySpeed: 3000,
+                cssEase: 'ease-in-out'
+            });
+            $('#linkArea').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                autoplay: true,
+                speed: 1800,
+                autoplaySpeed: 3000,
+                cssEase: 'cubic-bezier(0.645, 0.045, 0.355, 1)',
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 520,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+    <!--footable-->
+    <link rel="stylesheet" type="text/css" href="../the_moon/Scripts/footable/footable.core.css">
+    <script src="../the_moon/Scripts/footable/footable.js"></script>
+    <script>
+        $('table.responsive').footable();
+    </script>
+    <!--customBox-->
+    <link rel="stylesheet" href="the_moon/Scripts/custombox/custombox.css" type="text/css">
+    <script src="../the_moon/Scripts/custombox/custombox.js"></script>
+    <script src="../the_moon/Scripts/custombox/legacy.js"></script>
+    <script src="../the_moon/Scripts/scrollReveal.js"></script>
+    <script>
+        $(function () {
+            var config = {
+                reset: false,
+                mobile: false,
+                delay: 'onload'
+            }
+            window.sr = new scrollReveal(config);
+        });
+    </script>
+    <!--fb-->
+    <div id="fb-root"></div>
+    <script>(function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/zh_TW/all.js#xfbml=1";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!--customer Js-->
+
+    <!--tab-->
+    <script type="text/javascript">
+        $(function () {
+            $('.tabContent').find('li#intro').show();
+            $('.tab').find('a').click(function () {
+                var obj = $(this).attr('href');
+                $(this).addClass('current').siblings().removeClass('current');
+                $(obj).fadeIn().siblings().hide();
+                return false;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
